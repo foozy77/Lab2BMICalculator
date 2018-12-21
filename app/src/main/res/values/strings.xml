@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab2 BMI Calculator</string>
+    <string name="hint_weight">Weight (kg)</string>
+    <string name="hint_height">Height (m)</string>
+    <string name="calc_button">Calculate BMI</string>
+</resources>
