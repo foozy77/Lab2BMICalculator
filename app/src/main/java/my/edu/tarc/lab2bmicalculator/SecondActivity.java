@@ -20,26 +20,29 @@ public class SecondActivity extends AppCompatActivity{
         imageViewBMI = findViewById(R.id.imageViewBMI);
         textViewBMIStatus = findViewById(R.id.textViewBMIStatus);
 
-        Intent intent = getIntent();
+        Intent intent = this.getIntent();
 
-        double bmi = intent.getDoubleExtra("BMI", 0);
+        double bmi = intent.getDoubleExtra("bmi",0);
 
-        if( bmi < 18.5 ){
+        if(bmi < 18.5)
+        {
             imageViewBMI.setImageResource(R.drawable.under);
             textViewBMIStatus.setText("Underweight");
         }
-        else if( bmi > 24.5 ){
+        else if(bmi > 24.5)
+        {
             imageViewBMI.setImageResource(R.drawable.over);
             textViewBMIStatus.setText("Overweight");
         }
-        else{
+        else
+        {
             imageViewBMI.setImageResource(R.drawable.normal);
             textViewBMIStatus.setText("Normal");
         }
     }
 
-
-    public void close(View view){
+    public void close(View view)
+    {
         finish();
     }
 }
